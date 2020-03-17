@@ -35,7 +35,7 @@ MB>
 
 the program is ready for use.
 
-## Connecting to a Modbus TCP
+## Connecting to a Modbus TCP server
 
 At the `MB>` prompt type:
 
@@ -59,9 +59,12 @@ show
 send
 ```
 
-The `fc 3` specifies function code 3 (read hold holding registers).  Thge `addr 256` specifies a register address of 256.  The `data 8` instructs the server
-to return the 8 word values held at register addresses 256 to 263 inclusive.  The `show` displays the packet bytes about to be sent and a human readable
-break down of the bytes.  Finally the `send` sends the packets and waits for a response.
+The `fc 3` specifies function code 3 (read hold holding registers).
+The `addr 256` specifies a register address of 256.  The `data 8`
+instructs the server to return the 8 word values held at register
+addresses 256 to 263 inclusive.  The `show` displays the packet
+bytes about to be sent and a human readable break down of the bytes.
+Finally the `send` sends the packets and waits for a response.
 
 ## Quitting the program
 
@@ -70,7 +73,7 @@ will be closed before the program exists.
 
 ## Notes
 
-This tool is for debugging a Modbus TCP server and *NOT* to be used
+This tool is for debugging a Modbus TCP server and NOT to be used
 in a production environment for critical monitoring or (shudder) device
 control.  You have been warned!
 
