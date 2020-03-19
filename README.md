@@ -7,6 +7,14 @@ Written in Python 3.
 
 Runs on UNIX, Linux and Windows.
 
+## Demo video
+
+A video showing the Modbus TCP debug utility in action:
+
+[Modbus TCP debug utility](https://youtu.be/qAe64vMbH-w)
+
+It is approximately three and a half minutes long.
+
 ## Running
 
 On UNIX and Linux make sure the `mbdebug.py` file is executable:
